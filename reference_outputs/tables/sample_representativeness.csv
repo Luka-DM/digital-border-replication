@@ -1,0 +1,9 @@
+metric,value
+Panel importers (countries),56
+Panel partners (countries),244
+Total unique countries in panel,244
+"Pre-period GDP/cap median (panel exporters, USD)",2892
+"Pre-period GDP/cap mean (panel exporters, USD)",10936
+Pre-period P6 regulations: median,0
+Pre-period P6 regulations: mean,0.14
+Share of panel importers with >=1 P6 reg pre-period (%),17.1

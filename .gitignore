@@ -1,0 +1,19 @@
+# Large or licence-restricted inputs: obtain from the original sources (see README)
+data/raw/*
+!data/raw/README.md
+!data/raw/Digital Trade Indicators Measurements.xlsx
+# Generated intermediates and outputs
+data/final_dataset/*
+!data/final_dataset/.gitkeep
+outputs/*
+!outputs/.gitkeep
+data/mapping/DTI_BPM6_Mapping.xlsx
+# Secrets and local environment
+.env
+.Renviron
+*.Rhistory
+.RData
+.RDataTmp
+.ipynb_checkpoints/
+.DS_Store
+~$*

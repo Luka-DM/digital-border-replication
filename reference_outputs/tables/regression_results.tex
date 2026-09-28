@@ -1,0 +1,51 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Structural gravity PPML — effect of data localization on bilateral services trade},
+note{}={* p \num{< 0.1}, ** p \num{< 0.05}, *** p \num{< 0.01}},
+note{ }={Cluster-robust standard errors at the symmetric country-pair level in parentheses.},
+note{  }={All models are estimated using PPML via fepois.},
+note{   }={DLR variable: dlr\_any equals 1 when there is any active Pillar 6 data-localization regulation.},
+note{    }={Interaction models include both interaction components as standalone regressors.},
+note{     }={Trade policy control: rta\_services indicates whether the RTA covers services.},
+note{      }={Sample period depends on data availability; CEPII controls are available through 2019 unless forward-filled.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{18}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{23}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& (1) Baseline
+any P6 DLR & (2) Count of
+active P6 regs & (3) Forward lead
+(placebo) & (4) DLR x Exporter
+digital share & (5) DLR x Digital
+product & (6) DLR + trade
+policy controls \\
+DLR (any active P6 regulation) & \num{-0.103}** &  & \num{-0.047} &  & \num{-0.102} & \num{-0.103}** \\
+& (\num{0.045}) &  & (\num{0.048}) &  & (\num{0.071}) & (\num{0.045}) \\
+Count of active P6 regulations &  & \num{-0.064}* &  &  &  &  \\
+&  & (\num{0.034}) &  &  &  &  \\
+DLR (forward lead, t+2) &  &  & \num{-0.051} &  &  &  \\
+&  &  & (\num{0.062}) &  &  &  \\
+DLR x Exporter digital share (demeaned) &  &  &  & \num{-0.390} &  &  \\
+&  &  &  & (\num{0.525}) &  &  \\
+DLR x Digital product &  &  &  &  & \num{-0.002} &  \\
+&  &  &  &  & (\num{0.081}) &  \\
+Both WTO members &  &  &  &  &  & \num{-0.277}** \\
+&  &  &  &  &  & (\num{0.135}) \\
+Both EU members &  &  &  &  &  & \num{0.003} \\
+&  &  &  &  &  & (\num{0.053}) \\
+RTA covers services &  &  &  &  &  & \num{-0.087}** \\
+&  &  &  &  &  & (\num{0.034}) \\
+Observations & \num{1366148} & \num{1366148} & \num{1203539} & \num{1355475} & \num{1366148} & \num{1364569} \\
+Importer-year FE & X & X & X &  & X & X \\
+Importer-product-year FE &  &  &  & X &  &  \\
+Exporter-product-year FE & X & X & X & X & X & X \\
+Pair-product FE & X & X & X & X & X & X \\
+\end{talltblr}
+\end{table}
